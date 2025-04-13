@@ -1,0 +1,18 @@
+#this file is for building the project from the source code
+
+name: letterboxd-bluesky-poster
+
+services:
+  letterboxd-bluesky-poster:
+    container_name: "letterboxd-bluesky-poster"
+    build:
+      context: ./
+      dockerfile: Dockerfile.dockerfile
+    image: letterboxd-bluesky-poster:latest 
+    restart: unless-stopped
+    env_file: ".env"
+    volumes:
+      - letterboxd-bluesky-poster-data:/app/Data
+
+volumes:
+  letterboxd-bluesky-poster-data:

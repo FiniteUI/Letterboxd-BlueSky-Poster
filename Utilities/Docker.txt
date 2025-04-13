@@ -1,0 +1,14 @@
+#build image
+docker build -f Dockerfile.dockerfile -t finiteui/letterboxd-bluesky-poster:testing .
+
+#build container from source
+docker compose -f source-compose.yml up -d
+
+#update tags
+docker image tag finiteui/letterboxd-bluesky-poster:testing finiteui/letterboxd-bluesky-poster:latest
+
+#publish image to dockerhub
+docker push finiteui/letterboxd-bluesky-poster:latest
+
+#build container from dockerhub image
+docker compose up -d

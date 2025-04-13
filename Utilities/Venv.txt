@@ -1,0 +1,25 @@
+#Initial Install
+
+#Create virtual environment
+python -m venv .venv
+
+#Enter virtual environment
+.venv/Scripts/Activate
+
+#Install packages
+pip install feedparser
+pip install python-dotenv
+pip install atproto
+pip install bs4
+pip install requests
+
+#Generate requirements file
+pip freeze > requirements.txt
+
+#Exit virtual environment
+Deactivate
+
+#install packages with requirements file
+.venv/Scripts/Activate
+pip install -r requirements.txt
+Deactivate

@@ -13,7 +13,7 @@ The project can be run locally, but was designed to be run on Docker.
 
 The image is hosted on [Docker Hub](https://hub.docker.com/r/finiteui/letterboxd-bluesky-poster) and can be deployed from there.
 To deploy the project on docker:
-- Create a new directory and download the included [docker-compose](Source/docker-compose.yml) file into it.
+- Create a new directory and download the included [docker-compose](docker-compose.yml) file into it.
 - In the directory, create a file named .env with the contents defined below.
 - In the terminal, navigate to this directory, and run ```docker compose up -d```
 

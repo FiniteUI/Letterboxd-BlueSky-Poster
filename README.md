@@ -21,7 +21,7 @@ If the Letterboxd-Tweeter.env file variables are correct, you should be up and r
 ![image](https://github.com/user-attachments/assets/a207a86b-bfef-43be-9709-217fd3a1c726)
 
 ## ENV File
-This project relies on an env file named .env with configuration variables to run. An example can be found [here](Source/.env.example).
+This project relies on an env file named .env with configuration variables to run. An example can be found [here](.env.example).
 The file needs the following:
 ```
 LETTERBOXD_ACCOUNT = Your Letterboxd account name

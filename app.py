@@ -81,9 +81,9 @@ def process_loop(letterboxd_account, bluesky_user, bluesky_app_password):
                 break
 
         if posted:
-            registry.setValue('last_post', datetime.now())
+            registry.setValue('last_post', datetime.now().astimezone())
 
-        registry.setValue('last_process', datetime.now())
+        registry.setValue('last_process', datetime.now().astimezone())
         print("Process complete. Waiting...")
 
         sleep(300)

@@ -2,7 +2,7 @@ import feedparser
 from ConfigurationFile import ConfigurationFile
 from BlueSky import BlueSky
 from datetime import datetime
-from time import mktime, sleep
+from time import  sleep
 import os
 import dotenv
 
